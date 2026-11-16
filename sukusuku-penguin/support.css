@@ -1,0 +1,19 @@
+:root { --paper: #f7f8f3; --card: #fff; --ink: #252e22; --muted: #67715f; --accent: #435f21; --gold: #a9c666; --line: #dde3d5; }
+h1 { font-family: inherit; font-weight: 800; letter-spacing: -.04em; }
+.hero { border-top-color: #b9d97b; background: #eaf0df; }
+.app-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+.app-heading img { border-radius: 17px; }
+.hero .tagline { font-weight: 700; color: var(--ink); }
+.hero-link { display: inline-flex; align-items: center; gap: 20px; min-height: 48px; margin-top: 20px; font-size: 14px; font-weight: 650; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 0; list-style: none; }
+.steps li { border: 1px solid var(--line); border-radius: 18px; padding: 22px; background: var(--card); }
+.step-number { color: var(--accent); font-size: 12px; font-weight: 700; }
+.steps h3 { font-size: 16px; margin: 12px 0 8px; }
+.steps p, .note { font-size: 13px; color: var(--muted); }
+.steps p { margin: 0; }
+.note { padding: 16px 20px; border-radius: 14px; background: #edf0e7; }
+.contact { background: #273322; }
+.contact p { color: #d5ddce; }
+.contact .button { background: #ddf589; color: #25321e; }
+.contact .address { color: #ddf589; }
+@media (max-width: 680px) { .steps { grid-template-columns: 1fr; } .steps li { padding: 20px; } }
