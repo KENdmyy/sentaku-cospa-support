@@ -17,3 +17,33 @@ h1 { font-family: inherit; font-weight: 800; letter-spacing: -.04em; }
 .contact .button { background: #ddf589; color: #25321e; }
 .contact .address { color: #ddf589; }
 @media (max-width: 680px) { .steps { grid-template-columns: 1fr; } .steps li { padding: 20px; } }
+
+/* Keep support contact readable independently of the shared apps palette. */
+.contact {
+  margin-top: 40px;
+  padding: clamp(24px, 5vw, 40px);
+  border: 1px solid #d1ddcf;
+  border-radius: 20px;
+  background: #eef3e9;
+  color: #253b2b;
+}
+.contact h2 { margin-top: 0; color: #253b2b; }
+.contact p { color: #425344; line-height: 1.9; }
+.contact .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 12px 24px;
+  margin: 12px 0;
+  border-radius: 12px;
+  background: #34593c;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.contact .button:hover { background: #28472f; }
+.contact .button:focus-visible { outline: 3px solid #34593c; outline-offset: 4px; }
+.contact .address { color: #34593c; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .contact .button { width: 100%; box-sizing: border-box; } }
